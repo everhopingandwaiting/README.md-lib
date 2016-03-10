@@ -1,7 +1,3 @@
-# README.md-lib
-
-部署说明文档
-
 http://www.bkjia.com/webzh/1001016.html  修复ueditor  文件传输
 
 后期 功能 增加及其完善 ，都 在本分支发布 创建！

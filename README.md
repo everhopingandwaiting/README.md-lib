@@ -12,7 +12,7 @@ http://www.bkjia.com/webzh/1001016.html  修复ueditor  文件传输
 =====
 1.下载
 
-	项目git地址：git clone ssh://yaojie@139.196.49.110:29418/JY-shushang-springmvc-noMaven
+	项目git地址：git clone gogs@222.30.64.155:graduation_project/lib-springMVC-mybatis.git
 	Tomcat下载：http://tomcat.apache.org/download-90.cgi
 	Intellij Idea 下载：https://www.jetbrains.com/idea/download/#section=linux
 	Intellij Idea激活：https://www.jetbrains.com/idea/download/#section=linux
@@ -20,30 +20,13 @@ http://www.bkjia.com/webzh/1001016.html  修复ueditor  文件传输
 2.部署：
 
 
-  (1) 下载完成后，在终端运行如下命令
+  (1) 下载完成后，在终端运行如下命令 (工程下载目录)
 
-	john@john-inspiron-7420:~/Documents/source_code/java/FHMYSQL
-    shushang-web ✗ $ git  checkout shushang-web
-    M       about.md
-    M       src/com/fh/controller/base/BaseController.java
-    M       src/com/fh/controller/foreground/ShushangSysController.java
-    已经位于 'shushang-web'
-    您的分支领先 'JY-shushang-springmvc-noMaven/shushang-web' 共 4 个提交。
-      （使用 "git push" 来发布您的本地提交）
-    john@john-inspiron-7420:~/Documents/source_code/java/FHMYSQL
-    shushang-web ✗ $ git  branch
-      addFunRaspbInfo
-      addProductInfo
-      master
-    * shushang-web
-    john@john-inspiron-7420:~/Documents/source_code/java/FHMYSQL
-    shushang-web ✗ $
-    john@john-inspiron-7420:~/Documents/source_code/java/FHMYSQL
-    shushang-web ✗ $                                                                                                                                                                        1 ↵
-    john@john-inspiron-7420:~/Documents/source_code/java/FHMYSQL
-    shushang-web ✗ $
+	john@john-inspiron-7420:~/Documents/source_code/java/lib-springMVC-mybatis/
+     master ✗ $ git  checkout master
 
-(2)切换到最新分支 `  shushang-web`，打开Intellij Idea 选择 File > New >  Project from  exists Sources ，打开对话框选择从gerrit 下载的源码，一路默认即可！
+
+(2)切换到最新分支 `  shushang-web`，打开Intellij Idea 选择 File > New >  Project from  exists Sources ，打开对话框选择从gogs 下载的源码，一路默认即可！
 
 (3)项目打开后
  ![edit config](READMEIMG/选区_045.png)
@@ -61,9 +44,9 @@ http://www.bkjia.com/webzh/1001016.html  修复ueditor  文件传输
 
 3.部署数据库：
 * 安装 mysql 数据库略。
-* 在工程根目录下 有个数据库脚本`numysql.sql`文件，选择任意数据库管理工具将数据导入数据库，这里介绍 命令行操作
+* 在工程根目录下 有个数据库脚本`lib-sys.sql`文件，选择任意数据库管理工具将数据导入数据库，这里介绍 命令行操作
 	+ mysql -u  ‘你的数据库用户名’ -p '数据库密码'
-	+ 正确进入后 执行 `mysql root@localhost:(none)> source /path/to/sql/source_code/java/numysql.sql;
+	+ 正确进入后 执行 `mysql root@localhost:(none)> source /path/to/sql/source_code/java/lib-sys.sql;
 `
 4.运行本程序：
 ![run program ](READMEIMG/055.png)
@@ -73,9 +56,9 @@ http://www.bkjia.com/webzh/1001016.html  修复ueditor  文件传输
  user： admin
  pwd： 1
 
- /： http://localhost:8080/shushang/showAll
+ /： http://localhost:8081 (视自己配置而定)
 
- 后台：http://localhost:8080
+ 后台：http://localhost:8081
 
 
 | user     		|pwd    						 |

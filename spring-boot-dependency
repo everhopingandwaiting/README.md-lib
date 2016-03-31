@@ -1,0 +1,29 @@
+spring-boot  
+-----
+dependency 
+
+  =======
+  
+  org.springframework.boot
+  
+  --strater
+  --logging
+  --starter-web
+  --actuator
+  starter-security
+  --starter-log4j2
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  net.sf.dozer
+  
+  --dozer
+  --dozer-spring
+  

@@ -14,7 +14,7 @@ dependency
   --starter-log4j2
   --starter--jdbc
   --starter-test
-  
+  --starter--parent
   
   
   

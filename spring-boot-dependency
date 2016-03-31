@@ -10,8 +10,10 @@ dependency
   --logging
   --starter-web
   --actuator
-  starter-security
+  --starter-security
   --starter-log4j2
+  --starter--jdbc
+  --starter-test
   
   
   
@@ -27,3 +29,5 @@ dependency
   --dozer
   --dozer-spring
   
+  com.h2database
+  --h2

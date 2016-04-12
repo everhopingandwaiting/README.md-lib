@@ -29,7 +29,7 @@ RUN set -x \
 openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" \
 && rm -rf /var/lib/apt/lists/* \
 && [ "$JAVA_HOME" = "$(docker-java-home)" ]
-RUN source /etc/profile && echo $JAVA_HOME
+RUN   echo $JAVA_HOME
 # config java env end!
 #start tomcat 
 ENTRYPOINT apache-tomcat-9.0.0.M3/bin/startup.sh && tail -f apache-tomcat-9.0.0.M3/logs/lib/Pro_j_yao

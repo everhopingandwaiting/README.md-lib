@@ -5,9 +5,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 				bzip2  	unzip 	xz-utils sudo  openssh-server maven   \
 				&& rm -rf /var/lib/apt/lists/*
 											   
-RUN apt-get autoclean && apt-get autoremove && dpkg -l |  grep  ^rc |  awk '{
-print $2}' |  xargs sudo dpkg -P'
-}'											  
+RUN apt-get autoclean -y && apt-get autoremove -y							  
 RUN echo 'deb http://httpredir.debian.org/debian experimental main' > /etc/apt/sources.list.d/experimental.list
 RUN echo 	
 # Default to UTF-8 file.encoding

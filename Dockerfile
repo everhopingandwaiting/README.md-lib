@@ -2,7 +2,7 @@
 FROM buildpack-deps:sid-scm  
 MAINTAINER j.yao.SUSE "351022095@qq.com"
 RUN apt-get update && apt-get install -y --no-install-recommends \
-				bzip2  	unzip 	xz-utils sudo awk openssh-server maven   \
+				bzip2  	unzip 	xz-utils sudo  openssh-server maven   \
 				&& rm -rf /var/lib/apt/lists/*
 											   
 RUN apt-get autoclean && apt-get autoremove && dpkg -l |  grep  ^rc |  awk '{

@@ -32,6 +32,7 @@ openjdk-9-jdk-headless="$JAVA_DEBIAN_VERSION" \
 RUN   echo $JAVA_HOME
 RUN  pwd
 RUN   ls -al
+RUN  java  ; java -version
 # config java env end!
 #start tomcat 
 ENTRYPOINT apache-tomcat-9.0.0.M3/bin/startup.sh && tail -f apache-tomcat-9.0.0.M3/logs/lib/Pro_j_yao
